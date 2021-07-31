@@ -10,7 +10,7 @@ This library uses BLAS and LAPACK in its Arraymancer backend. Please use the [ap
 
 
 ## Supported Linear Models
-| Model                                            | Nim Command						  |
+| Model                                            | Nim Command              |
 |--------------------------------------------------|--------------------------|
 | Gaussian regression (linear regression)          | `glm(X, y, Gaussian())`  |
 | Binomial regression (binary logistic regression) | `glm(X, y, Binomial())`  |
@@ -72,12 +72,12 @@ import linear_models
 
     # Viewing results - statsTable
     for i in 0..<X.shape[1]:
-	    discard result1.statsSummary.statsTable[i].coefficient
-	    discard result1.statsSummary.statsTable[i].standardError
-	    discard result1.statsSummary.statsTable[i].zScore
-	    discard result1.statsSummary.statsTable[i].pValue
-	    discard result1.statsSummary.statsTable[i].confidenceIntervalLower
-	    discard result1.statsSummary.statsTable[i].confidenceIntervalUpper
+      discard result1.statsSummary.statsTable[i].coefficient
+      discard result1.statsSummary.statsTable[i].standardError
+      discard result1.statsSummary.statsTable[i].zScore
+      discard result1.statsSummary.statsTable[i].pValue
+      discard result1.statsSummary.statsTable[i].confidenceIntervalLower
+      discard result1.statsSummary.statsTable[i].confidenceIntervalUpper
 
 ```
 
