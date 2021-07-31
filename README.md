@@ -16,7 +16,7 @@ This library uses BLAS and LAPACK in its Arraymancer backend. Please use the [ap
 | Binomial regression (binary logistic regression) | `glm(X, y, Binomial())`  |
 | Poisson regression                               | `glm(X, y, Poisson())`   |
 
-Note: This library also supports `Gamma()` regression, however its currently unstable for most inputs due to the optimizer implementation.
+Note: This library also supports `Gamma()` regression, however it is currently unstable for most inputs due to the optimizer implementation.
 
 
 ## Examples
@@ -28,7 +28,6 @@ import arraymancer
 import linear_models
 
   let
-  	# Init variables
     X = [[0.95601119,  0.87647851],
          [-2.20004465, -0.62625987],
          [-1.27545515,  1.32644564],
@@ -85,10 +84,10 @@ import linear_models
 ### Bonus procs
 This library includes some linear algebra procs that maybe useful for your other projects. Future work includes integrating these useful procs into the Arraymancer library and removing them from this one.
 
-`backSolve*[T: float](X, B: Tensor[T]): Tensor[T]` which is similar to R's `backsolve` and uses the `dtrsm` from CBLAS.
-`forwardSolve*[T: float](X, B: Tensor[T]): Tensor[T]` which is similar to R's `forwardsolve` and uses the `dtrsm` from CBLAS.
-`choleskyDecomposition*[T: float](X: Tensor[T], uplo: string = "L"): Tensor[T]` which is similar to R's `cholesky` and uses the `dpotrf` from CLAPACK.
-`pinv*[T: SomeFloat](X: Tensor[T]): Tensor[T]` which is similar to Numpy's `np.linalg.pinv` and uses the `SVD` algorithm from Arraymancer.
+- `backSolve*[T: float](X, B: Tensor[T]): Tensor[T]` which is similar to R's `backsolve` and uses the `dtrsm` from CBLAS.
+- `forwardSolve*[T: float](X, B: Tensor[T]): Tensor[T]` which is similar to R's `forwardsolve` and uses the `dtrsm` from CBLAS.
+- `choleskyDecomposition*[T: float](X: Tensor[T], uplo: string = "L"): Tensor[T]` which is similar to R's `cholesky` and uses the `dpotrf` from CLAPACK.
+- `pinv*[T: SomeFloat](X: Tensor[T]): Tensor[T]` which is similar to Numpy's `np.linalg.pinv` and uses the `SVD` algorithm from Arraymancer.
 
 
 ## Accuracy

@@ -4,7 +4,7 @@ import
   ../../src/linear_models
 
 proc `~=`(x, y: SomeFloat): bool =
-  result = x.round(13) == y.round(13)
+  result = x.round(12) == y.round(12)
 
 
 proc checkStatsTablesEqual(table1, table2: StatsTable)  =
