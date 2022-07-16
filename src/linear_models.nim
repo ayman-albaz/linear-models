@@ -1,12 +1,12 @@
 import linear_models / [
   families,
-  linear_algebra,
+  linearalgebra,
   models,
   utils
 ]
 
 export
   families,
-  linear_algebra,
+  linearalgebra,
   models,
   utils

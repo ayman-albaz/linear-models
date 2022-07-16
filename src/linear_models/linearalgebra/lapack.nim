@@ -3,7 +3,7 @@ import
   arraymancer/linear_algebra/helpers/triangular,
   nimlapack,
   ../utils/exceptions,
-  ../utils/tensor_utils
+  ../utils/tensorutils
 
 proc dpotrf[T: float](X: Tensor[T], uplo: string): Tensor[T] =
     

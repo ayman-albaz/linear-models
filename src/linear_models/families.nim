@@ -4,7 +4,7 @@ import families / [
   gamma,
   gaussian,
   poisson,
-  math_utils
+  mathutils
 ]
 
 export
@@ -13,4 +13,4 @@ export
   gamma,
   gaussian,
   poisson,
-  math_utils
+  mathutils

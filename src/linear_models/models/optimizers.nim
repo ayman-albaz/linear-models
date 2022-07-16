@@ -1,7 +1,7 @@
 import 
   arraymancer,
   ../families,
-  ../linear_algebra,
+  ../linearalgebra,
   ../utils
 
 
@@ -12,13 +12,15 @@ type
     dispersion*, degreesFreedom*: float
 
  
-proc iterativelyReweightedLeastSquares*[T: float, S: Family](X, y: Tensor[T],
-                                                             family: S,
-                                                             maxIter: int = 200,
-                                                             tolerance: T = 1e-8): FitSummary =
-  #[
+proc iterativelyReweightedLeastSquares*[T: float, S: Family](
+  X, y: Tensor[T],
+  family: S,
+  maxIter: int = 200,
+  tolerance: T = 1e-8
+): FitSummary =
+  ##[
       Adapted from: https://bwlewis.github.io/GLM/ which is based off of the R implementation
-  ]# 
+  ]## 
 
   # Init variables
   let 

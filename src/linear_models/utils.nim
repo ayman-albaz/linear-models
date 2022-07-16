@@ -1,10 +1,10 @@
 import utils / [
   constants,
   exceptions,
-  tensor_utils
+  tensorutils
 ]
 
 export
   constants,
   exceptions,
-  tensor_utils
+  tensorutils

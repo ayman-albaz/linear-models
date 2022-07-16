@@ -50,6 +50,10 @@ import linear_models
     # GLM fit with 95% two-tailed confidence interval
     result1 = glm(X, y, Binomial(), confidenceIntervalAlpha=0.05)
 
+    # GLM fit with t distribution instead of default z distribution 
+    # Recommended when n < 40; changes pValue and confidence interval
+    result1 = glm(X, y, Binomial(), useZ=false)
+
     # GLM fit with intercept
     result2 = glm(X.addConstant(), y, Binomial())
 
@@ -91,7 +95,7 @@ This library includes some linear algebra procs that maybe useful for your other
 
 
 ## Accuracy
-All functions in this library are accurate up-to 14 decimal places (float64).
+Most functions in this library are accurate up-to 12-14 decimal places (float64).
 
 
 ## Performance

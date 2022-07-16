@@ -1,7 +1,7 @@
 import
   arraymancer,
   nimblas,
-  ../utils/tensor_utils
+  ../utils/tensorutils
 
 
 proc dtrsm[T: float](X, B: Tensor[T], uplo: UploType): Tensor[T] =

@@ -1,4 +1,4 @@
-import linear_algebra / [
+import linearalgebra / [
   blas,
   lapack,
   pinv

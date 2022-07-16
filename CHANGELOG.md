@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2022-07-16
+### Added
+- Added `useZ` feature for GLM so that you can get t distribution based stats
+### Changed
+- Changed some syntax
 
 ## [0.1.0] - 2021-07-31
 ### Added
